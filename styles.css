@@ -12,6 +12,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 92%;
+}
+
 body {
   background-color: var(--dark-color);
   font-family: "Inter", sans-serif;
@@ -26,9 +30,14 @@ h1 {
   color: var(--green-color);
   font-family: "Sen", sans-serif;
   font-size: 9.2rem;
-  margin: 3rem 0.5rem 2rem;
+  margin: 3rem 0.3rem 2rem;
   line-height: 9rem;
   letter-spacing: 0.1rem;
+}
+
+.letter-overlap {
+  position: relative;
+  z-index: 2;
 }
 
 p {
@@ -41,12 +50,12 @@ p {
 
 .notify-btn {
   font-family: "Inter", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
   color: var(--dark-color);
   cursor: pointer;
-  width: 290px;
-  height: 70px;
+  width: 240px;
+  height: 60px;
   background-color: var(--green-color);
   border-radius: 5px;
   border: none;
@@ -68,11 +77,57 @@ p {
   margin-right: 1rem;
 }
 
-.twitter-container a {
-  width: 100%;
-}
-
-.twitter-container a p:hover {
+.twitter-container:hover {
   color: #00acee;
   transition: 0.3s;
+}
+
+.avatar-group {
+}
+.avatar-1 {
+  transform: scale(0.9);
+  position: absolute;
+  top: 5.2rem;
+  left: 3.7rem;
+  z-index: -1;
+}
+
+.avatar-2 {
+  transform: scale(0.62);
+  position: absolute;
+  top: 19.2rem;
+  left: 44.5rem;
+  z-index: 1;
+}
+
+.avatar-3 {
+  transform: scale(0.8);
+  position: absolute;
+  top: 4.2rem;
+  left: 58rem;
+  z-index: -1;
+}
+
+.avatar-4 {
+  transform: scale(0.8);
+  position: absolute;
+  top: 31rem;
+  left: 61.5rem;
+  z-index: -1;
+}
+
+.avatar-5 {
+  transform: scale(0.78);
+  position: absolute;
+  top: 1.8rem;
+  left: 67rem;
+  z-index: -1;
+}
+
+.avatar-6 {
+  transform: scale(0.8);
+  position: absolute;
+  top: 19.5rem;
+  left: 72rem;
+  z-index: -1;
 }
